@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Las Matemáticas en Tu Vida Diaria: Cómo Nos Impactan</title>
-    <meta name="description" content="Explora cómo las matemáticas influyen en nuestra vida diaria, desde finanzas hasta cocina. Aprende a tomar decisiones informadas.">
+    <meta name="description" content="Explora cómo las matemáticas influyen en nuestra vida diaria, desde finanzas hasta cocina. Aprende a tomar decisiones informadas." />
     <style>
         body {
             background-image: url('imagen2.jpeg');
@@ -16,93 +16,67 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column; /* Cambiado para apilar elementos verticalmente */
+            flex-direction: column; /* Apilado vertical */
         }
-
-        .donation-button {
-            background-color: #ff0000; /* Color rojo para el botón */
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-bottom: 20px; /* Espacio entre el botón y el contenido */
-            transition: background-color 0.3s; /* Transición suave para el hover */
-            margin-top: 20px; /* Margen superior para el botón */
-        }
-
-        .donation-button:hover {
-            background-color: #cc0000; /* Color más oscuro al pasar el mouse */
-        }
-
         .text-container {
             background-color: rgba(255, 255, 255, 0.9);
-            padding: 40px; /* Aumentamos el espaciado interno */
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
-            width: 90%; /* Ajustamos el ancho máximo al 90% del contenedor padre */
-            text-align: left;
-            overflow-y: auto; /* Agregamos scroll vertical si el contenido excede la altura */
-            max-height: 80vh; /* Limitamos la altura máxima al 80% de la altura de la ventana */
-        }
-
-        .text-container2 {
-            background-color: rgba(255, 241, 168, 0.9);
-            padding: 40px; /* Aumentamos el espaciado interno */
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
-            width: 90%; /* Ajustamos el ancho máximo al 90% del contenedor padre */
-            text-align: left;
-            margin-top: 20px; /* Espacio entre el contenido principal y la sección de donaciones */
-        }
-
-        .text-container2 p:nth-of-type(n+3):nth-of-type(-n+7){
-            overflow-wrap: break-word;
-            word-break: break-all;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        p {
-            color: #555; /* Color del texto para párrafos */
-        }
-
-        .contact-area {
-            background-color: #e0f7fa;
-            padding: 20px;
+            padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             max-width: 800px;
             width: 90%;
+            text-align: left;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        p a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        p a:hover {
+            text-decoration: underline;
+        }
+        /* Estilos para el crédito */
+        .credito {
+            font-family: 'Arial Black', Arial, sans-serif;
+            font-size: 1.1em;
+            color: #222;
+            margin-top: 30px;
             text-align: center;
-            margin-top: 40px;
         }
-
+        .credito a {
+            color: #0077cc;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        .credito a:hover {
+            border-bottom: 2px solid #0077cc;
+        }
         html {
-            scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en el botón */
+            scroll-behavior: smooth;
         }
-
         @media (max-width: 600px) {
-            .text-container, .text-container2, .contact-area {
-                padding: 20px; /* Reduce el padding en pantallas pequeñas */
+            .text-container {
+                padding: 20px;
             }
-
             h1 {
-                font-size: 1.5em; /* Ajusta el tamaño del encabezado */
+                font-size: 1.5em;
             }
-
             h2 {
-                font-size: 1.2em; /* Ajusta el tamaño de los subencabezados */
+                font-size: 1.2em;
             }
         }
     </style>
 </head>
 <body>
-    <a class="donation-button">¡Dona ahora!</a>
     <div class="text-container">
         <h1>Las Matemáticas en la Vida Cotidiana: Cómo Nos Benefician Cada Día</h1>
         <p>Las matemáticas son una parte integral de nuestras vidas, aunque a menudo no nos damos cuenta. Desde la planificación de un viaje hasta la administración de nuestras finanzas, las matemáticas están en todas partes. En este artículo, exploraremos algunas de las formas en que las matemáticas influyen en nuestra vida diaria y cómo pueden ayudarnos a tomar decisiones más informadas.</p>
@@ -116,21 +90,21 @@
         <h2>2. Compras Inteligentes: Descuentos y Ofertas</h2>
         <p>Las matemáticas también juegan un papel crucial al hacer compras. Saber calcular porcentajes te ayudará a aprovechar al máximo las ofertas.</p>
         <p><strong>Cálculo de Descuentos:</strong> Cuando ves un artículo con un 20% de descuento, puedes calcular el precio final de la siguiente manera:</p>
-        <p>Precio Original: $50<br>
-        Descuento: 20% de $50 = $10<br>
+        <p>Precio Original: $50<br />
+        Descuento: 20% de $50 = $10<br />
         Precio Final: $50 - $10 = $40</p>
         <p>Conocer cómo calcular descuentos te permite tomar decisiones más inteligentes y ahorrar dinero.</p>
 
         <h2>3. Cocinar con Precisión: Recetas y Proporciones</h2>
         <p>La cocina es otra área donde las matemáticas son esenciales. Las recetas requieren medidas precisas, y a menudo necesitamos ajustar las cantidades.</p>
         <p><strong>Ajustando Recetas:</strong> Si una receta es para 4 personas y necesitas cocinar para 6, puedes usar una regla de tres simple:</p>
-        <p>Ingredientes para 4 personas: 2 tazas de arroz<br>
+        <p>Ingredientes para 4 personas: 2 tazas de arroz<br />
         Ingredientes para 6 personas: (2 tazas / 4 personas) * 6 personas = 3 tazas de arroz</p>
         <p>Esto asegura que todos tengan suficiente comida sin desperdiciar ingredientes.</p>
 
         <h2>4. Planificación de Viajes: Distancias y Tiempos</h2>
         <p>Cuando planificas un viaje, las matemáticas son fundamentales para calcular distancias y tiempos de viaje. Saber cómo usar la fórmula de distancia, velocidad y tiempo puede ayudarte a organizar mejor tu itinerario.</p>
-        <p><strong>Fórmula:</strong><br>
+        <p><strong>Fórmula:</strong><br />
         Distancia = Velocidad × Tiempo</p>
         <p><strong>Ejemplo:</strong> Si planeas conducir a 60 km/h y el destino está a 180 km, puedes calcular el tiempo de viaje:</p>
         <p>Tiempo = Distancia / Velocidad = 180 km / 60 km/h = 3 horas</p>
@@ -142,27 +116,9 @@
         <h2>Conclusión</h2>
         <p>Las matemáticas son más que solo números y fórmulas; son herramientas poderosas que nos ayudan a navegar por la vida cotidiana. Al comprender y aplicar conceptos matemáticos, podemos tomar decisiones más informadas y mejorar nuestra calidad de vida.</p>
 
-        <div class="text-container2" id="donation-section">
-            <h2 style="color: red;">Si te ha gustado este artículo y deseas apoyar nuestro trabajo, considera hacer una donación. Tu contribución nos ayudará a seguir creando contenido valioso y accesible para todos.</h2>
-            <h3>Pasarelas de Donación</h3>
-            <p><strong>Perfect Money: U18279294</strong></p>
-            <p><strong>Litecoin (LTC): LYjX8djzDEY4Hjw8Sk5Rv5fFs8m9RwzpKf</strong></p>
-            <p><strong>USD Coin (USDC): 0x9237BC25f27772Db32cC4eC53e52218f6210454B</strong></p>
-            <p><strong>Ethereum (ETH): 0x9237BC25f27772Db32cC4eC53e52218f6210454B</strong></p>
-            <p><strong>Bitcoin (BTC): bc1qqsp5s4ttgy4h0ds4l608hhy230lclyqp3tqv03</strong></p>
-        </div>
-
-        <div class="contact-area">
-            <h2>Creado por Leonel Sandoval</h2>
-            <p>Si deseas un sitio web similar o necesitas ayuda con el tuyo, ¡no dudes en contactarme!</p>
-            <p>Email: <a href="mailto:elmatematicofeliz@gmail.com">elmatematicofeliz@gmail.com</a></p>
-        </div>
+        <p class="credito">
+            Programado por <a href="https://leoneldev.great-site.net" target="_blank" rel="noopener noreferrer">Leonel Sandoval</a>
+        </p>
     </div>
-
-    <script>
-        document.querySelector('.donation-button').addEventListener('click', function() {
-            document.querySelector('#donation-section').scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
 </body>
 </html>
